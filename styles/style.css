@@ -15,9 +15,14 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    
 }
+
 .mid h1{
-    font-size:200px;
+    font-size:12.5rem;
+}
+.mid .buttons {
+    width:100%;
 }
 .mid .buttons .start_button_1,
 .pause_button_2,
@@ -39,4 +44,65 @@ body{
 }
 .stop_button_3{
     background-color:black
+}
+
+@media (min-width:600px) and (max-width:850px){
+    .mid{
+        max-width:600px;
+    }
+    .mid h1{
+        font-size:8rem;
+    }
+    .mid .buttons .start_button_1,
+    .pause_button_2,
+    .stop_button_3{
+        margin:0px;
+        font-size:22px;
+    }
+}
+@media (min-width:450px) and (max-width:600px){
+    .mid{
+        max-width:400px;
+    }
+    .mid h1{
+        font-size:5rem;
+    }
+    .mid .buttons{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .mid .buttons .start_button_1,
+    .pause_button_2,
+    .stop_button_3{
+        margin:0;
+        margin-bottom:5px;
+        font-size:16px;
+        width:20%;
+        width:100%;
+        padding:20px
+    }
+}
+@media (max-width:450px){
+    .mid{
+        max-width:300px;
+    }
+    .mid h1{
+        font-size:3rem;
+    }
+    .mid .buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .mid .buttons .start_button_1,
+    .pause_button_2,
+    .stop_button_3{
+        margin:0;
+        margin-bottom:5px;
+        font-size:16px;
+        width:100%;
+        padding:20px
+        
+    }
 }
