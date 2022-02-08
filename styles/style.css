@@ -2,7 +2,7 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
-    font-family:arial
+    font-family:monospace
 }
 body{
     background-image:linear-gradient(blue, cyan)
@@ -15,26 +15,33 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    
 }
-
-.mid h1{
+.mid .title-too{
+    font-size:2rem;
+    color:gold;
+    text-shadow:1px 2px #000
+}
+.mid .title{
     font-size:12.5rem;
+    text-shadow:3px 1px 9px #aaa
 }
 .mid .buttons {
-    width:100%;
+    display:flex;
 }
 .mid .buttons .start_button_1,
 .pause_button_2,
 .stop_button_3{
-    width:30%;
+    flex:1;
     margin:10px;
     padding:10px 0px;
     font-size:30px;
     font-weight:bold;
     border:none;
     border-radius:10px;
-    color:#bbb
+    color:#bbb;
+    cursor:pointer;
+    text-shadow:1px 2px #000;
+    box-shadow:1px 4px 9px #000
 }
 .start_button_1{
     background-color:green;
@@ -50,13 +57,14 @@ body{
     .mid{
         max-width:600px;
     }
-    .mid h1{
-        font-size:8rem;
+    .mid .title{
+        font-size:10rem;
     }
     .mid .buttons .start_button_1,
     .pause_button_2,
     .stop_button_3{
         margin:0px;
+        margin-left:5px;
         font-size:22px;
     }
 }
@@ -64,8 +72,8 @@ body{
     .mid{
         max-width:400px;
     }
-    .mid h1{
-        font-size:5rem;
+    .mid .title{
+        font-size:7rem;
     }
     .mid .buttons{
         display:flex;
@@ -87,8 +95,8 @@ body{
     .mid{
         max-width:300px;
     }
-    .mid h1{
-        font-size:3rem;
+    .mid .title{
+        font-size:4rem;
     }
     .mid .buttons{
         display:flex;
